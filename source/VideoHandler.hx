@@ -25,7 +25,7 @@ class VideoHandler extends FlxVideo
 		FlxG.mouse.visible = false;
 		FlxG.sound.music.stop();
 
-		return super.play(location, shouldLoop);
+		return super.play();
 	}
 
 	override public function dispose():Void
