@@ -44,8 +44,8 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib setup ~/haxelib
-          haxelib git hxcpp https://github.com/mcagabe19-stuff/hxcpp.git
-          haxelib git lime https://github.com/mcagabe19-stuff/lime-8.2.0
+          haxelib git hxcpp https://github.com/mcagabe19-stuff/hxcpp
+          haxelib git lime https://github.com/mcagabe19-stuff/lime-8.2.1
           haxelib install openfl
           haxelib install flixel
           haxelib install flixel-tools
@@ -57,7 +57,6 @@ jobs:
           haxelib install hscript
           haxelib install firetongue 2.1.0
           haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate
-          haxelib git linc_luajit https://github.com/mcagabe19-stuff/linc_luajit-rewriten
           haxelib install extension-androidtools
           haxelib install hxcpp-debug-server
           haxelib list
