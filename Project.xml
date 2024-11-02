@@ -33,7 +33,7 @@
 	<!-- Defines whether the file system can be read/written directly. Does not work in browser. -->
 	<define name="FEATURE_FILESYSTEM" if="desktop || mobile" />
 	<!-- Defines whether MP4 videos should be enabled. -->
-	<define name="FEATURE_MP4" if="desktop" unless="hl" />
+	<define name="FEATURE_MP4" if="desktop || mobile" unless="hl" />
 	<!-- Defines whether Caching is enabled. Will cause issues on systems with limited memory. Doesn't work with Linux. -->
 	<define name="FEATURE_CACHING" if="desktop" unless="linux || 32bit" />
 	<!-- Defines whether OBS or other Windows recording software can be detected. Unverified with Mac. -->
