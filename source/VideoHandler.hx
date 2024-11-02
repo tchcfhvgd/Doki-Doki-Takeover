@@ -16,10 +16,10 @@ class VideoHandler extends FlxVideo
 		onEndReached.add(function()
 		{
 			dispose();
-		});
+		}, true);
 	}
 
-	override public function play(location:String, shouldLoop:Bool = false):Int
+	override public function play():Bool
 	{
 		FlxG.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyPress);
 		FlxG.mouse.visible = false;
