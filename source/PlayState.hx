@@ -71,7 +71,7 @@ import sys.FileSystem;
 import GameJolt.GameJoltAPI;
 #end
 #if FEATURE_MP4
-import hxcodec.flixel.FlxVideoSprite as VideoSprite;
+import hxvlc.flixel.FlxVideoSprite as VideoSprite;
 #end
 
 using StringTools;
@@ -1514,7 +1514,8 @@ class PlayState extends MusicBeatState
 						}
 
 						rainBG = new VideoSprite();
-						rainBG.play(Paths.video('rain'), true);
+						rainBG.load(Paths.video('rain'));
+						rainBG.play();
 						rainBG.scrollFactor.set();
 						rainBG.setGraphicSize(Std.int(rainBG.width / defaultCamZoom));
 						rainBG.updateHitbox();
@@ -1556,7 +1557,8 @@ class PlayState extends MusicBeatState
 					if (!SaveData.lowEnd)
 					{
 						testVM = new VideoSprite();
-						testVM.play(Paths.video('testvm'), true);
+						testVM.load(Paths.video('testvm'));
+						testVM.play();
 						testVM.scrollFactor.set();
 						testVM.setGraphicSize(Std.int(testVM.width / defaultCamZoom));
 						testVM.updateHitbox();
@@ -1652,7 +1654,8 @@ class PlayState extends MusicBeatState
 					if (!SaveData.lowEnd)
 					{
 						crackBG = new VideoSprite(-10, -10);
-						crackBG.play(Paths.video('crackBG'), true);
+						crackBG.load(Paths.video('crackBG'));
+						crackBG.play();
 						crackBG.scrollFactor.set(0.3, 0.3);
 						crackBG.setGraphicSize(Std.int(crackBG.width / defaultCamZoom));
 						crackBG.updateHitbox();
@@ -2717,11 +2720,13 @@ class PlayState extends MusicBeatState
 					var video:VideoHandler = new VideoHandler();
 					video.canSkip = SaveData.beatLibitina;
 					video.skipKeys = [FlxKey.ESCAPE, FlxKey.ENTER];
-					video.play(Paths.video('metaintro'));
+					video.load(Paths.video('metaintro'));
+					video.play();
 					video.onEndReached.add(function()
 					{
 						startCountdown();
-					});
+  video.dispose();
+					}, true);
 					#else
 					startCountdown();
 					#end
@@ -3039,11 +3044,13 @@ class PlayState extends MusicBeatState
 					var video:VideoHandler = new VideoHandler();
 					video.canSkip = SaveData.beatPrologue;
 					video.skipKeys = [FlxKey.ESCAPE, FlxKey.ENTER];
-					video.play(Paths.video('monika'));
+					video.load(Paths.video('monika'));
+					video.play();
 					video.onEndReached.add(function()
 					{
 						endSong();
-					});
+						video.dispose();
+					}, true);
 					#else
 					endSong();
 					#end
@@ -3088,21 +3095,36 @@ class PlayState extends MusicBeatState
 			{
 				#if FEATURE_MP4
 				var video:VideoHandler = new VideoHandler();
-				video.play(Paths.video('monikacodin'));
+				video.load(Paths.video('monikacodin'));
+				video.play();
+				video.onEndReached.add(function()
+					{
+						video.dispose();
+					}, true);
 				#end
 			}
 			case 'senpaitransform':
 			{
 				#if FEATURE_MP4
 				var video:VideoHandler = new VideoHandler();
-				video.play(Paths.video('senpaicodin'));
+				video.load(Paths.video('senpaicodin'));
+				video.play();
+				video.onEndReached.add(function()
+					{
+						video.dispose();
+					}, true);
 				#end
 			}
 			case 'youregoingtophilly':
 			{
 				#if FEATURE_MP4
 				var video:VideoHandler = new VideoHandler();
-				video.play(Paths.video('youregoingtophilly'));
+				video.load(Paths.video('youregoingtophilly'));
+				video.play();
+				video.onEndReached.add(function()
+					{
+						video.dispose();
+					}, true);
 				#end
 			}
 			case 'wiltedbgin':
