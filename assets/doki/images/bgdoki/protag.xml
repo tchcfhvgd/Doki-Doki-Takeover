@@ -1,17 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="protag.png">
-	<!-- Created with Adobe Animate version 22.0.5.191 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Protag-kun BG0000" x="5" y="5" width="347" height="838" frameX="-2" frameY="-5" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0001" x="5" y="5" width="347" height="838" frameX="-2" frameY="-5" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0002" x="357" y="5" width="347" height="838" frameX="0" frameY="-5" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0003" x="357" y="5" width="347" height="838" frameX="0" frameY="-5" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0004" x="709" y="5" width="332" height="836" frameX="-13" frameY="-7" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0005" x="709" y="5" width="332" height="836" frameX="-13" frameY="-7" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0006" x="1046" y="5" width="328" height="840" frameX="-17" frameY="-3" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0007" x="1046" y="5" width="328" height="840" frameX="-17" frameY="-3" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0008" x="1379" y="5" width="323" height="843" frameX="-22" frameY="0" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0009" x="1379" y="5" width="323" height="843" frameX="-22" frameY="0" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0010" x="1707" y="5" width="319" height="841" frameX="-27" frameY="-2" frameWidth="349" frameHeight="843"/>
-	<SubTexture name="Protag-kun BG0011" x="1707" y="5" width="319" height="841" frameX="-27" frameY="-2" frameWidth="349" frameHeight="843"/>
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="Protag-kun BG0000" x="317" y="826" width="315" height="826" frameX="-24" frameY="-19" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0001" x="317" y="826" width="315" height="826" frameX="-24" frameY="-19" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0002" x="317" y="0" width="315" height="826" frameX="-23" frameY="-19" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0003" x="317" y="0" width="315" height="826" frameX="-23" frameY="-19" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0004" x="938" y="0" width="308" height="832" frameX="-28" frameY="-13" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0005" x="938" y="0" width="308" height="832" frameX="-28" frameY="-13" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0006" x="0" y="0" width="317" height="838" frameX="-30" frameY="-7" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0007" x="0" y="0" width="317" height="838" frameX="-30" frameY="-7" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0008" x="632" y="0" width="306" height="845" frameX="-30" frameY="0" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0009" x="632" y="0" width="306" height="845" frameX="-30" frameY="0" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0010" x="0" y="838" width="309" height="845" frameX="-28" frameY="0" frameWidth="349" frameHeight="843"/>
+	<SubTexture name="Protag-kun BG0011" x="0" y="838" width="309" height="845" frameX="-28" frameY="0" frameWidth="349" frameHeight="843"/>
 </TextureAtlas>
