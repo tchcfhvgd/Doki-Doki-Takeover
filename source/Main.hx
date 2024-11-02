@@ -22,6 +22,10 @@ import sys.FileSystem;
 import sys.io.File;
 import sys.io.Process;
 #end
+#if android
+import android.content.Context;
+import android.os.Build;
+#end
 
 using StringTools;
 
@@ -45,12 +49,23 @@ class Main extends Sprite
 	{
 		// quick checks
 		Lib.current.addChild(new Main());
+		#if cpp
+		cpp.NativeGc.enable(true);
+		#elseif hl
+		hl.Gc.enable(true);
+		#end
 	}
 
 	public function new()
 	{
 		super();
 
+		#if android
+		Sys.setCwd(Path.addTrailingSlash(Context.getExternalFilesDir()));
+		#elseif ios
+		Sys.setCwd(System.documentsDirectory);
+		#end
+		
 		if (stage != null)
 		{
 			init();
@@ -80,25 +95,11 @@ class Main extends Sprite
 		startFullscreen = isSteamDeck();
 		#end
 
-		#if (flixel < "5.0.0")
-		var stageWidth:Int = Lib.current.stage.stageWidth;
-		var stageHeight:Int = Lib.current.stage.stageHeight;
-
-		if (zoom == -1)
-		{
-			var ratioX:Float = stageWidth / gameWidth;
-			var ratioY:Float = stageHeight / gameHeight;
-			zoom = Math.min(ratioX, ratioY);
-			gameWidth = Math.ceil(stageWidth / zoom);
-			gameHeight = Math.ceil(stageHeight / zoom);
-		}
-		#end
-
-		game = new FlxGame(gameWidth, gameHeight, initialState, #if (flixel < "5.0.0") zoom, #end framerate, framerate, skipSplash, startFullscreen);
+		game = new FlxGame(gameWidth, gameHeight, initialState, framerate, framerate, skipSplash, startFullscreen);
 		addChild(game);
 
 		fpsVar = new FPSCounter(10, 3, 0xFFFFFF);
-		addChild(fpsVar);
+		FlxG.game.addChild(fpsVar);
 
 		if (fpsVar != null)
 			fpsVar.visible = SaveData.showFPS;
@@ -111,6 +112,10 @@ class Main extends Sprite
 		// NOTE: Causes Hashlink to crash, so it's disabled.
 		#if !hl
 		Debug.onGameStart();
+		#end
+
+		#if android
+		FlxG.android.preventDefaultKeys = [BACK];
 		#end
 	}
 
@@ -141,7 +146,7 @@ class Main extends Sprite
 		dateNow = dateNow.replace(" ", "_");
 		dateNow = dateNow.replace(":", "'");
 
-		path = './crash/DDTO_$dateNow.txt';
+		path = 'crash/DDTO_$dateNow.txt';
 
 		for (stackItem in callStack)
 		{
@@ -158,8 +163,8 @@ class Main extends Sprite
 			+ e.error
 			+ "\nPlease report this error to the GitHub page: https://github.com/Jorge-SunSpirit/Doki-Doki-Takeover\n\n> Crash Handler written by: sqirra-rng";
 
-		if (!FileSystem.exists("./crash/"))
-			FileSystem.createDirectory("./crash/");
+		if (!FileSystem.exists("crash/"))
+			FileSystem.createDirectory("crash/");
 
 		File.saveContent(path, errMsg + "\n");
 
