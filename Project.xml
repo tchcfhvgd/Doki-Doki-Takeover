@@ -109,7 +109,7 @@
 
 	<haxelib name="flxanimate" />
 	<haxelib name="firetongue" />
-	<haxelib name="hxvlc" if="FEATURE_MP4"/>
+	<haxelib name="hxCodec" if="FEATURE_MP4"/>
 	<haxelib name="extension-androidtools" if="android" />
 
 	<haxelib name="discord_rpc" if="FEATURE_DISCORD"/>
