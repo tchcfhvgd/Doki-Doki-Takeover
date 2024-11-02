@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': Doki Doki Takeover!" file="DokiTakeover" package="com.teamtbd.dokitakeover" main="Main" version="3.1.2" company="TeamTBD" />
+	<app title="Friday Night Funkin': Doki Doki Takeover!" file="DokiTakeover" package="com.teamtbd.dokitakeoverPlus" main="Main" version="3.1.2" company="TeamTBD" />
 
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
@@ -17,8 +17,11 @@
 	<!--These window settings apply to all targets-->
 	<window width="1280" height="720" fps="" background="#000000" hardware="true" vsync="false" orientation="landscape" fullscreen="false" resizable="true"/>
 
-	<!--Mobile/Switch-specific-->
-	<window if="mobile || switch" orientation="landscape" fullscreen="true" resizable="false" vsync="true"/>
+	<!--Mobile-specific-->
+	<window if="mobile" orientation="landscape" fullscreen="true" resizable="false" allow-shaders="true" require-shaders="true" allow-high-dpi="true" />
+
+	<!--Switch-specific-->
+	<window if="switch" orientation="landscape" fullscreen="true" width="0" height="0" resizable="true" />
 
 	<!-- _____________________________ DDTO Settings ____________________________ -->
 
@@ -28,9 +31,9 @@
 	<!-- Defines whether the Discord client should be enabled. -->
 	<define name="FEATURE_DISCORD" if="desktop PUBLIC_BUILD" unless="hl"/>
 	<!-- Defines whether the file system can be read/written directly. Does not work in browser. -->
-	<define name="FEATURE_FILESYSTEM" if="desktop" />
+	<define name="FEATURE_FILESYSTEM" if="desktop || mobile" />
 	<!-- Defines whether MP4 videos should be enabled. -->
-	<define name="FEATURE_MP4" if="desktop || android" unless="hl" />
+	<define name="FEATURE_MP4" if="desktop || mobile" unless="hl" />
 	<!-- Defines whether Caching is enabled. Will cause issues on systems with limited memory. Doesn't work with Linux. -->
 	<define name="FEATURE_CACHING" if="desktop" unless="linux || 32bit" />
 	<!-- Defines whether OBS or other Windows recording software can be detected. Unverified with Mac. -->
@@ -38,13 +41,13 @@
 	<!-- Defines whether Game Jolt integration is enabled. -->
 	<!-- <define name="FEATURE_GAMEJOLT" if="PUBLIC_BUILD" unless="hl" /> -->
 	<!-- Defines whether a log file can be created. Depends on FEATURE_FILESYSTEM. Pointless when trace logging is disabled. -->
-	<define name="FEATURE_LOGGING" if="FEATURE_FILESYSTEM" unless="PUBLIC_BUILD" />
+	<define name="FEATURE_LOGGING" if="FEATURE_FILESYSTEM" />
 	<!-- Defines whether or not language support is available. -->
-	<!-- <define name="FEATURE_LANGUAGE" /> -->
+	<define name="FEATURE_LANGUAGE" />
 	<!-- Defines whether there's an unlock all function in the Options menu. -->
-	<define name="FEATURE_UNLOCK" unless="PUBLIC_BUILD" />
+	<define name="FEATURE_UNLOCK" />
 	<!-- Defines whether or not the Izzy Engine crash handler is used. -->
-	<define name="CRASH_HANDLER" if="desktop" unless="debug" />
+	<define name="CRASH_HANDLER" if="desktop || mobile" unless="debug" />
 
 	<!-- _____________________________ Path Settings ____________________________ -->
 
@@ -84,10 +87,8 @@
 
 	<assets path="assets/locales" if="FEATURE_LANGUAGE"/>
 
-	<section if="NO_LANGUAGE">
-		<assets path="assets/locales/en-US"/>
-		<assets path="assets/locales/index.xml"/>
-	</section>
+	<assets path="assets/locales/en-US"/>
+	<assets path="assets/locales/index.xml"/>
 
 	<assets path='art/readme.txt' rename='fnf_readme.txt' />
 	<assets path='LICENSE' rename='LICENSE.txt' />
@@ -108,7 +109,7 @@
 
 	<haxelib name="flxanimate" />
 	<haxelib name="firetongue" />
-	<haxelib name="hxCodec" if="FEATURE_MP4"/>
+	<haxelib name="hxvlc" if="FEATURE_MP4"/>
 	<haxelib name="extension-androidtools" if="android" />
 
 	<haxelib name="discord_rpc" if="FEATURE_DISCORD"/>
@@ -159,6 +160,8 @@
 	<!--Enable this for Nape release builds for a serious peformance improvement-->
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
 
+	
+	<haxedef name="no-deprecation-warnings"/>
 	<!--Allow working memory greater than 1GB-->
 	<!-- <haxedef name="HXCPP_GC_BIG_BLOCKS"/> -->
 
@@ -168,6 +171,10 @@
 
 	<!-- _________________________________ Custom _______________________________ -->
 
+	<!-- Do whatever you want I'm tired uninstall and install everytime -->
+			<certificate path="key.keystore" password="psychengine" alias="psychport" alias-password="psychengine" unless="debug" />
+	</section>
+		
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
 
 	<icon path="art/icon8.png" size='8'/>
