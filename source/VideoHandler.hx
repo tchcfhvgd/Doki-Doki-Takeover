@@ -1,7 +1,7 @@
 #if FEATURE_MP4
 import flixel.FlxG;
 import flixel.input.keyboard.FlxKey;
-import hxcodec.flixel.FlxVideo;
+import hxvlc.flixel.FlxVideo;
 import openfl.events.KeyboardEvent;
 
 class VideoHandler extends FlxVideo
