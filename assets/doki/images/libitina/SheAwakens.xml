@@ -1,41 +1,41 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="SheAwakens.png">
-	<!-- Created with Adobe Animate version 21.0.6.41649 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="SheAwakens0000" x="8" y="8" width="1200" height="570" frameX="-66" frameY="-28" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0001" x="8" y="8" width="1200" height="570" frameX="-66" frameY="-28" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0002" x="8" y="8" width="1200" height="570" frameX="-66" frameY="-28" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0003" x="1216" y="8" width="1200" height="570" frameX="-66" frameY="-28" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0004" x="2424" y="8" width="1303" height="612" frameX="-15" frameY="-7" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0005" x="2424" y="8" width="1303" height="612" frameX="-15" frameY="-7" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0006" x="2424" y="8" width="1303" height="612" frameX="-15" frameY="-7" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0007" x="8" y="628" width="1303" height="612" frameX="-15" frameY="-7" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0008" x="1319" y="628" width="1332" height="626"/>
-	<SubTexture name="SheAwakens0009" x="1319" y="628" width="1332" height="626"/>
-	<SubTexture name="SheAwakens0010" x="1319" y="628" width="1332" height="626"/>
-	<SubTexture name="SheAwakens0011" x="2659" y="628" width="1332" height="626"/>
-	<SubTexture name="SheAwakens0012" x="8" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0013" x="8" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0014" x="8" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0015" x="8" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0016" x="1106" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0017" x="1106" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0018" x="1106" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0019" x="1106" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0020" x="2204" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0021" x="2204" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0022" x="2204" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0023" x="2204" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0024" x="8" y="1730" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0025" x="8" y="1730" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0026" x="8" y="1730" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0027" x="8" y="1730" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0028" x="8" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0029" x="8" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0030" x="8" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0031" x="8" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0032" x="1106" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0033" x="1106" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0034" x="1106" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
-	<SubTexture name="SheAwakens0035" x="1106" y="1262" width="1090" height="460" frameX="-119" frameY="-81" frameWidth="1332" frameHeight="626"/>
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="SheAwakens0000" x="0" y="1008" width="1079" height="488" frameX="-121" frameY="-54" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0001" x="0" y="1008" width="1079" height="488" frameX="-121" frameY="-54" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0002" x="0" y="1008" width="1079" height="488" frameX="-121" frameY="-54" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0003" x="1079" y="1008" width="1085" height="475" frameX="-118" frameY="-58" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0004" x="0" y="0" width="1174" height="506" frameX="-73" frameY="-40" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0005" x="0" y="0" width="1174" height="506" frameX="-73" frameY="-40" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0006" x="0" y="0" width="1174" height="506" frameX="-73" frameY="-40" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0007" x="1174" y="501" width="1151" height="499" frameX="-84" frameY="-40" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0008" x="1174" y="0" width="1174" height="501" frameX="-73" frameY="-38" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0009" x="1174" y="0" width="1174" height="501" frameX="-73" frameY="-38" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0010" x="1174" y="0" width="1174" height="501" frameX="-73" frameY="-38" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0011" x="0" y="506" width="1172" height="502" frameX="-74" frameY="-35" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0012" x="1059" y="1496" width="1031" height="409" frameX="-145" frameY="-91" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0013" x="1059" y="1496" width="1031" height="409" frameX="-145" frameY="-91" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0014" x="1059" y="1496" width="1031" height="409" frameX="-145" frameY="-91" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0015" x="1059" y="1496" width="1031" height="409" frameX="-145" frameY="-91" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0016" x="1035" y="1913" width="1022" height="397" frameX="-149" frameY="-94" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0017" x="1035" y="1913" width="1022" height="397" frameX="-149" frameY="-94" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0018" x="1035" y="1913" width="1022" height="397" frameX="-149" frameY="-94" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0019" x="1035" y="1913" width="1022" height="397" frameX="-149" frameY="-94" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0020" x="0" y="1496" width="1059" height="417" frameX="-131" frameY="-98" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0021" x="0" y="1496" width="1059" height="417" frameX="-131" frameY="-98" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0022" x="0" y="1496" width="1059" height="417" frameX="-131" frameY="-98" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0023" x="0" y="1496" width="1059" height="417" frameX="-131" frameY="-98" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0024" x="0" y="1913" width="1035" height="424" frameX="-143" frameY="-90" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0025" x="0" y="1913" width="1035" height="424" frameX="-143" frameY="-90" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0026" x="0" y="1913" width="1035" height="424" frameX="-143" frameY="-90" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0027" x="0" y="1913" width="1035" height="424" frameX="-143" frameY="-90" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0028" x="1059" y="1496" width="1031" height="409" frameX="-145" frameY="-91" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0029" x="1059" y="1496" width="1031" height="409" frameX="-145" frameY="-91" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0030" x="1059" y="1496" width="1031" height="409" frameX="-145" frameY="-91" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0031" x="1059" y="1496" width="1031" height="409" frameX="-145" frameY="-91" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0032" x="1035" y="1913" width="1022" height="397" frameX="-149" frameY="-94" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0033" x="1035" y="1913" width="1022" height="397" frameX="-149" frameY="-94" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0034" x="1035" y="1913" width="1022" height="397" frameX="-149" frameY="-94" frameWidth="1332" frameHeight="626"/>
+	<SubTexture name="SheAwakens0035" x="1035" y="1913" width="1022" height="397" frameX="-149" frameY="-94" frameWidth="1332" frameHeight="626"/>
 </TextureAtlas>
