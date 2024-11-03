@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="LibiFinaleDramatic.png">
-	<!-- Created with Adobe Animate version 21.0.6.41649 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="LibiFinale0000" x="8" y="8" width="681" height="680"/>
-	<SubTexture name="LibiFinale0001" x="8" y="8" width="681" height="680"/>
-	<SubTexture name="LibiFinale0002" x="8" y="8" width="681" height="680"/>
-	<SubTexture name="LibiFinale0003" x="697" y="8" width="681" height="680"/>
-	<SubTexture name="LibiFinale0004" x="697" y="8" width="681" height="680"/>
-	<SubTexture name="LibiFinale0005" x="697" y="8" width="681" height="680"/>
-	<SubTexture name="LibiFinale0006" x="8" y="696" width="681" height="680"/>
-	<SubTexture name="LibiFinale0007" x="8" y="696" width="681" height="680"/>
-	<SubTexture name="LibiFinale0008" x="8" y="696" width="681" height="680"/>
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="LibiFinale0000" x="0" y="652" width="630" height="629" frameX="-41" frameY="-26" frameWidth="681" frameHeight="680"/>
+	<SubTexture name="LibiFinale0001" x="0" y="652" width="630" height="629" frameX="-41" frameY="-26" frameWidth="681" frameHeight="680"/>
+	<SubTexture name="LibiFinale0002" x="0" y="652" width="630" height="629" frameX="-41" frameY="-26" frameWidth="681" frameHeight="680"/>
+	<SubTexture name="LibiFinale0003" x="660" y="0" width="638" height="646" frameX="-33" frameY="-18" frameWidth="681" frameHeight="680"/>
+	<SubTexture name="LibiFinale0004" x="660" y="0" width="638" height="646" frameX="-33" frameY="-18" frameWidth="681" frameHeight="680"/>
+	<SubTexture name="LibiFinale0005" x="660" y="0" width="638" height="646" frameX="-33" frameY="-18" frameWidth="681" frameHeight="680"/>
+	<SubTexture name="LibiFinale0006" x="0" y="0" width="660" height="652" frameX="-11" frameY="-20" frameWidth="681" frameHeight="680"/>
+	<SubTexture name="LibiFinale0007" x="0" y="0" width="660" height="652" frameX="-11" frameY="-20" frameWidth="681" frameHeight="680"/>
+	<SubTexture name="LibiFinale0008" x="0" y="0" width="660" height="652" frameX="-11" frameY="-20" frameWidth="681" frameHeight="680"/>
 </TextureAtlas>
